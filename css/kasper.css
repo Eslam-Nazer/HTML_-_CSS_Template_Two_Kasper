@@ -740,3 +740,44 @@ header nav .form i {
   right: -6px;
 }
 /* End Skills */
+/* Start Qoute */
+.qoute {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.qoute::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+.qoute .container {
+  position: relative;
+}
+.qoute .container q {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.qoute .container q::before,
+.qoute .container q::after {
+  font: var(--fa-font-solid);
+  font-size: 30px;
+}
+
+.qoute .container q::before {
+  content: "\f10d";
+}
+.qoute .container q::after {
+  content: "\f10e";
+}
+/* End Qoute */
